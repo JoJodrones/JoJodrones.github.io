@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drone Enthusiast - Hire</title>
+    <style>
+        body {
+            background-color: #101820;
+            color: #D7A22A;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .hire-form {
+            max-width: 600px; /* Increased the max-width */
+            margin: 0 auto;
+            padding: 30px; /* Increased padding for more spacing inside the form */
+            background-color: #D7A22A;
+            border: 2px solid #101820;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .hire-form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #101820; /* Changed the label text color to black for better visibility */
+            background-color: #D7A22A; /* Added background color to labels for better contrast */
+            padding: 5px; /* Added padding to labels for better spacing */
+            border-radius: 5px;
+        }
+
+        .hire-form input,
+        .hire-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #101820;
+            border-radius: 5px;
+            background-color: #D7A22A;
+            color: #101820;
+        }
+
+        .hire-form textarea {
+            resize: vertical;
+        }
+
+        .hire-form button {
+            background-color: #101820;
+            color: #D7A22A;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .page-tabs {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .page-tabs a {
+            color: #D7A22A;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        .page-tabs a:hover {
+            background-color: #D7A22A;
+            color: #101820;
+        }
+    </style>
+</head>
+<body>
+    <h2>Request a Quote</h2>
+    <div class="hire-form">
+        <form action="hire.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="service">Service Needed:</label>
+            <input type="text" id="service" name="service" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="page-tabs">
+        <a href="Index.html">Home</a>
+        <a href="Products.html">Products</a>
+        <a href="Videos.html">Videos</a>
+        <a href="Hire.html">Hire</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+</body>
+</html>
